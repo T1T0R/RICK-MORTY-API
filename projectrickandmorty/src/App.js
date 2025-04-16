@@ -2,6 +2,8 @@ import {Container,Row,Col,Button} from 'react-bootstrap';
 import {useState,useEffect} from 'react';
 import CharacterCard from './components/CharacterCard';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Asegúrate de que esté importado
+import './App.css'; // Asegúrate de que esté importado
+import ButtonComponent from './components/ButtonComponent';
 
 
 
@@ -46,7 +48,8 @@ function App() {
           </Col>
         ))}
       </Row>
-      <Button onClick={loadMore} variant="primary">Cargar más</Button>
+      <ButtonComponent onClick={loadMore} variant="primary">
+      </ButtonComponent>
     </Container>
 
 
